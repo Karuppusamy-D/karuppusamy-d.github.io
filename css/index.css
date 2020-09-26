@@ -25,6 +25,10 @@ ul {
   list-style: none;
 }
 
+hr {
+  border: 1px solid var(--primaryColor);
+}
+
 body {
   background: var(--bgPrimary);
   font-family: "Roboto", sans-serif;
@@ -47,7 +51,7 @@ header {
           filter: drop-shadow(0px 1px 3px rgba(36, 32, 33, 0.28));
 }
 
-header .logo-wraper {
+header .logo-wrapper {
   height: 3.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,25 +64,25 @@ header .logo-wraper {
           justify-content: space-between;
 }
 
-header .logo-wraper .logo {
+header .logo-wrapper .logo {
   color: var(--primaryColor);
   font-family: "Great Vibes", "Times New Roman", Georgia;
   font-size: 1.6rem;
 }
 
-header .logo-wraper .humburger-icon {
+header .logo-wrapper .humburger-icon {
   width: 2rem;
   display: none;
 }
 
-header .nav-wraper {
+header .nav-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
 }
 
-header .nav-wraper .nav-item {
+header .nav-wrapper .nav-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,26 +97,26 @@ header .nav-wraper .nav-item {
   height: 3.5rem;
 }
 
-header .nav-wraper .nav-item a {
+header .nav-wrapper .nav-item a {
   font-size: 0.8rem;
   font-weight: 500;
   color: var(--mainText);
 }
 
-header .nav-wraper .nav-item.active {
+header .nav-wrapper .nav-item.active {
   background-color: var(--primaryColor);
   pointer-events: none;
 }
 
-header .nav-wraper .nav-item.active a {
+header .nav-wrapper .nav-item.active a {
   color: var(--secondaryColor);
 }
 
-header .nav-wraper .nav-item:hover {
+header .nav-wrapper .nav-item:hover {
   background-color: var(--hoverColor);
 }
 
-header .nav-wraper .nav-item:hover a {
+header .nav-wrapper .nav-item:hover a {
   color: var(--primaryColor);
 }
 
@@ -155,11 +159,11 @@ main {
           justify-content: center;
 }
 
-.intro-wraper {
+.intro-wrapper {
   height: 400px;
 }
 
-.intro-wraper .proverb {
+.intro-wrapper .proverb {
   font-family: "EB Garamond", "Roboto", sans-serif;
   font-size: 2rem;
   -webkit-box-orient: vertical;
@@ -168,44 +172,44 @@ main {
           flex-flow: column;
 }
 
-.intro-wraper .proverb .quotes {
+.intro-wrapper .proverb .quotes {
   color: var(--primaryColor);
   text-align: center;
   font-size: 1em;
 }
 
-.intro-wraper .proverb .quotes::before, .intro-wraper .proverb .quotes::after {
+.intro-wrapper .proverb .quotes::before, .intro-wrapper .proverb .quotes::after {
   content: '"';
   font-size: 1.4em;
 }
 
-.intro-wraper .proverb .author {
+.intro-wrapper .proverb .author {
   color: var(--primaryColor);
   font-size: 0.66em;
   margin-left: 50%;
 }
 
-.intro-wraper .proverb .author::before {
+.intro-wrapper .proverb .author::before {
   content: "-";
   font-size: 1.4em;
 }
 
-.intro-wraper .devices {
+.intro-wrapper .devices {
   justify-self: flex-start;
 }
 
-.intro-wraper .devices img {
+.intro-wrapper .devices img {
   width: 100%;
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
 }
 
-.about {
+.about-wrapper {
   padding: 3rem 0rem;
 }
 
-.about .profile-wraper {
+.about-wrapper .profile {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
@@ -217,7 +221,7 @@ main {
       align-self: flex-start;
 }
 
-.about .profile-wraper .profile-pic {
+.about-wrapper .profile .profile-pic {
   width: 10rem;
   border-radius: 50%;
   -o-object-fit: cover;
@@ -225,18 +229,48 @@ main {
   border: 2px solid var(--borderColor);
 }
 
-.about .profile-wraper .profile-name {
+.about-wrapper .profile .profile-name {
   padding: 1rem 0rem;
   color: var(--primaryColor);
   font-size: 2rem;
   font-family: "EB Garamond", serif;
 }
 
-.about .about-text {
+.about-wrapper .intro-text {
+  justify-self: flex-start;
   text-align: center;
   color: var(--secondaryText);
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   padding: 2rem 0rem;
+}
+
+.skills-wrapper h2 {
+  text-align: center;
+  color: var(--primaryColor);
+  font-family: "Times New Roman", Times, serif;
+  padding-top: 4rem;
+}
+
+.skills-wrapper .skills-list {
+  padding: 5rem;
+  padding-top: 4rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 2rem;
+  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills-wrapper .skills-list .skill img {
+  height: 100px;
+  width: 100%;
 }
 
 .projects {
@@ -271,13 +305,13 @@ footer div {
         -ms-flex-flow: column;
             flex-flow: column;
   }
-  header .logo-wraper {
+  header .logo-wrapper {
     width: 100%;
   }
-  header .logo-wraper .humburger-icon {
+  header .logo-wrapper .humburger-icon {
     display: inline-block;
   }
-  header .nav-wraper {
+  header .nav-wrapper {
     display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -285,26 +319,46 @@ footer div {
             flex-flow: column;
     width: 100%;
   }
-  header .nav-wraper .nav-item {
+  header .nav-wrapper .nav-item {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
     padding-left: 1rem;
   }
-  header .nav-wraper.show {
+  header .nav-wrapper.show {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .intro-wraper .proverb {
+  .intro-wrapper .proverb {
     font-size: 1.5rem;
   }
-  .intro-wraper .devices {
+  .intro-wrapper .devices {
     -ms-grid-column-align: center;
         justify-self: center;
   }
-  .intro-wraper .devices img {
+  .intro-wrapper .devices img {
     width: 80%;
+  }
+  .about-wrapper .intro-text {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .skills-wrapper .skills-list {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding: 5rem 2rem;
+    padding-top: 4rem;
+    -ms-grid-columns: (75px)[3];
+        grid-template-columns: repeat(3, 75px);
+  }
+  .skills-wrapper .skills-list .skill img {
+    height: 75px;
   }
 }
 /*# sourceMappingURL=index.css.map */

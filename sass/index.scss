@@ -17,7 +17,7 @@ header {
     justify-content: space-between;
     padding: 0rem $padding-lr;
     filter: drop-shadow(0px 1px 3px rgba(36, 32, 33, 0.28));
-    .logo-wraper {
+    .logo-wrapper {
         height: $navbar-height;
         display: flex;
         align-items: center;
@@ -33,7 +33,7 @@ header {
             display: none;
         }
     }
-    .nav-wraper {
+    .nav-wrapper {
         display: flex;
         list-style: none;
 
@@ -94,7 +94,7 @@ main {
     justify-content: center;
 }
 
-.intro-wraper {
+.intro-wrapper {
     height: 400px;
     .proverb {
         font-family: "EB Garamond", "Roboto", sans-serif;
@@ -130,9 +130,9 @@ main {
     }
 }
 
-.about {
+.about-wrapper {
     padding: 3rem 0rem;
-    .profile-wraper {
+    .profile {
         flex-flow: column;
         align-items: center;
         align-self: flex-start;
@@ -149,11 +149,35 @@ main {
             font-family: "EB Garamond", serif;
         }
     }
-    .about-text {
+    .intro-text {
+        justify-self: flex-start;
         text-align: center;
         color: var(--secondaryText);
-        font-size: 1.25rem;
+        font-size: 1.4rem;
         padding: 2rem 0rem;
+    }
+}
+
+.skills-wrapper {
+    h2 {
+        text-align: center;
+        color: var(--primaryColor);
+        font-family: "Times New Roman", Times, serif;
+        padding-top: 4rem;
+    }
+    .skills-list {
+        padding: 5rem;
+        padding-top: 4rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-gap: 2rem;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        .skill img {
+            height: 100px;
+            width: 100%;
+        }
     }
 }
 
@@ -178,13 +202,13 @@ footer {
     /* For mobile: */
     header {
         flex-flow: column;
-        .logo-wraper {
+        .logo-wrapper {
             width: 100%;
             .humburger-icon {
                 display: inline-block;
             }
         }
-        .nav-wraper {
+        .nav-wrapper {
             display: none;
             flex-flow: column;
             width: 100%;
@@ -198,7 +222,7 @@ footer {
         }
     }
 
-    .intro-wraper {
+    .intro-wrapper {
         .proverb {
             font-size: 1.5rem;
         }
@@ -207,6 +231,24 @@ footer {
             img {
                 width: 80%;
             }
+        }
+    }
+    .about-wrapper {
+        .intro-text {
+            justify-self: center;
+            font-size: 1.25rem;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .skills-wrapper .skills-list {
+        justify-content: space-evenly;
+        padding: 5rem 2rem;
+        padding-top: 4rem;
+        grid-template-columns: repeat(3, 75px);
+        .skill img {
+            height: 75px;
         }
     }
 }
