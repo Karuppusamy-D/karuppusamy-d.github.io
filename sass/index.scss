@@ -1,0 +1,166 @@
+@import "./colors";
+@import "./defaults";
+
+$navbar-height: 3.5rem;
+$padding-lr: 1rem;
+
+body {
+    background: var(--bgPrimary);
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+}
+
+header {
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem $padding-lr;
+    filter: drop-shadow(0px 1px 3px rgba(36, 32, 33, 0.28));
+    .logo-wraper {
+        height: $navbar-height;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .logo {
+            color: var(--primaryColor);
+            font-family: "Great Vibes", "Times New Roman", Georgia;
+            font-size: 1.6rem;
+        }
+
+        .humburger-icon {
+            width: 2rem;
+            display: none;
+        }
+    }
+    .nav-wraper {
+        display: flex;
+        list-style: none;
+
+        .nav-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--secondaryColor);
+            min-width: 6rem;
+            height: $navbar-height;
+            a {
+                font-size: 0.8rem;
+                font-weight: 500;
+                color: var(--mainText);
+            }
+
+            &.active {
+                background-color: var(--primaryColor);
+                pointer-events: none;
+                a {
+                    color: var(--secondaryColor);
+                }
+            }
+            &:hover {
+                background-color: var(--hoverColor);
+                a {
+                    color: var(--primaryColor);
+                }
+            }
+        }
+    }
+}
+main {
+    background: #eee;
+    height: 100vh;
+}
+.s1 {
+    background-color: var(--bgPrimary);
+    overflow: auto;
+    padding: 0rem $padding-lr;
+}
+
+.s2 {
+    background-color: var(--bgSecondary);
+    overflow: auto;
+    padding: 0rem $padding-lr;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 400px;
+}
+
+.proverb {
+    font-family: "EB Garamond", "Roboto", sans-serif;
+    font-size: 2rem;
+
+    .quotes {
+        color: var(--primaryColor);
+        text-align: center;
+        font-size: 1em;
+        &::before,
+        &::after {
+            content: '"';
+            font-size: 1.4em;
+        }
+    }
+    .author {
+        color: var(--primaryColor);
+        text-align: center;
+        font-size: 0.66em;
+        margin-left: 50%;
+        &::before {
+            content: "-";
+            font-size: 1.4em;
+        }
+    }
+}
+
+.devices {
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    img {
+        width: 60vw;
+        max-width: max-content;
+    }
+}
+
+footer {
+    // height: 10vh;
+}
+
+@media (max-width: 800px) {
+    /* For mobile: */
+    header {
+        flex-flow: column;
+        .logo-wraper {
+            width: 100%;
+            .humburger-icon {
+                display: inline-block;
+            }
+        }
+        .nav-wraper {
+            display: none;
+            flex-flow: column;
+            width: 100%;
+            .nav-item {
+                justify-content: flex-start;
+                padding-left: 1rem;
+            }
+            &.show {
+                display: flex;
+            }
+        }
+    }
+    .intro {
+        flex-flow: column;
+    }
+    .proverb {
+        .quotes {
+            font-size: 1.5rem;
+        }
+        .author {
+            font-size: 1rem;
+        }
+    }
+}
