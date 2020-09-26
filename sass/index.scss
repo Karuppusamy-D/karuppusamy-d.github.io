@@ -67,8 +67,7 @@ header {
     }
 }
 main {
-    background: #eee;
-    height: 100vh;
+    background: var(--bgPrimary);
 }
 .s1 {
     background-color: var(--bgPrimary);
@@ -82,51 +81,97 @@ main {
     padding: 0rem $padding-lr;
 }
 
-.intro {
-    display: flex;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
     justify-content: space-evenly;
     align-items: center;
-    height: 400px;
 }
 
-.proverb {
-    font-family: "EB Garamond", "Roboto", sans-serif;
-    font-size: 2rem;
-
-    .quotes {
-        color: var(--primaryColor);
-        text-align: center;
-        font-size: 1em;
-        &::before,
-        &::after {
-            content: '"';
-            font-size: 1.4em;
-        }
-    }
-    .author {
-        color: var(--primaryColor);
-        text-align: center;
-        font-size: 0.66em;
-        margin-left: 50%;
-        &::before {
-            content: "-";
-            font-size: 1.4em;
-        }
-    }
-}
-
-.devices {
-    justify-self: center;
+.grid-column {
     display: flex;
+    justify-self: center;
     justify-content: center;
-    img {
-        width: 60vw;
-        max-width: max-content;
+}
+
+.intro-wraper {
+    height: 400px;
+    .proverb {
+        font-family: "EB Garamond", "Roboto", sans-serif;
+        font-size: 2rem;
+        flex-flow: column;
+        .quotes {
+            color: var(--primaryColor);
+            text-align: center;
+            font-size: 1em;
+            &::before,
+            &::after {
+                content: '"';
+                font-size: 1.4em;
+            }
+        }
+        .author {
+            color: var(--primaryColor);
+            font-size: 0.66em;
+            margin-left: 50%;
+            &::before {
+                content: "-";
+                font-size: 1.4em;
+            }
+        }
     }
+
+    .devices {
+        justify-self: flex-start;
+        img {
+            width: 100%;
+            max-width: max-content;
+        }
+    }
+}
+
+.about {
+    padding: 3rem 0rem;
+    .profile-wraper {
+        flex-flow: column;
+        align-items: center;
+        align-self: flex-start;
+        .profile-pic {
+            width: 10rem;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--borderColor);
+        }
+        .profile-name {
+            padding: 1rem 0rem;
+            color: var(--primaryColor);
+            font-size: 2rem;
+            font-family: "EB Garamond", serif;
+        }
+    }
+    .about-text {
+        text-align: center;
+        color: var(--secondaryText);
+        font-size: 1.25rem;
+        padding: 2rem 0rem;
+    }
+}
+
+.projects {
+    height: 100vh;
 }
 
 footer {
-    // height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bgSecondary);
+    color: var(--primaryColor);
+    height: $navbar-height;
+    width: 100%;
+    div {
+        font-family: emoji;
+    }
 }
 
 @media (max-width: 800px) {
@@ -152,15 +197,16 @@ footer {
             }
         }
     }
-    .intro {
-        flex-flow: column;
-    }
-    .proverb {
-        .quotes {
+
+    .intro-wraper {
+        .proverb {
             font-size: 1.5rem;
         }
-        .author {
-            font-size: 1rem;
+        .devices {
+            justify-self: center;
+            img {
+                width: 80%;
+            }
         }
     }
 }
