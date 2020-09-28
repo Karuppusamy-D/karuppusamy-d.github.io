@@ -274,7 +274,102 @@ main {
 }
 
 .projects {
-  height: 100vh;
+  background-color: #100e17;
+  color: #fff;
+}
+
+.projects .card-container {
+  width: 100%;
+  overflow-x: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3rem;
+}
+
+.projects .card {
+  min-width: 300px;
+  max-width: 350px;
+  height: 350px;
+  border-radius: 16px;
+  background-color: #17141d;
+  -webkit-box-shadow: -1rem 0 3rem #000;
+          box-shadow: -1rem 0 3rem #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1.5rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.projects .card:hover {
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+}
+
+.projects .card:hover ~ .card {
+  -webkit-transform: translateX(130px);
+          transform: translateX(130px);
+}
+
+.projects .card:not(:first-child) {
+  margin-left: -130px;
+}
+
+.projects .card .project-header {
+  margin-bottom: auto;
+}
+
+.projects .card .date {
+  font-size: 14px;
+  margin-bottom: 1rem;
+  color: #8a8a8a;
+}
+
+.projects .card .project-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.projects .card .project-details {
+  margin: 1rem 0rem;
+  margin-bottom: auto;
+}
+
+.projects .card .project-details .project-text {
+  text-indent: 1rem;
+  font-size: 0.9rem;
+  word-wrap: break-word;
+  padding: 0rem 1rem;
+}
+
+.projects .card .project-details .more {
+  font-size: 0.8rem;
+  color: var(--primaryColor);
+  display: inline;
+  padding-left: 0.7rem;
+}
+
+.projects .tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 1rem 0 1rem;
+}
+
+.projects .tags div {
+  font-size: 9px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border: 3px solid #28242f;
+  border-radius: 2rem;
 }
 
 footer {
@@ -287,7 +382,7 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: var(--bgSecondary);
+  background: var(--bgPrimary);
   color: var(--primaryColor);
   height: 3.5rem;
   width: 100%;
@@ -356,9 +451,19 @@ footer div {
     padding-top: 4rem;
     -ms-grid-columns: (75px)[3];
         grid-template-columns: repeat(3, 75px);
+    grid-gap: 1rem;
   }
   .skills-wrapper .skills-list .skill img {
     height: 75px;
+  }
+}
+
+@media (max-width: 400px) {
+  .intro-wrapper .devices {
+    width: 80vw;
+  }
+  .intro-wrapper .devices img {
+    width: 90%;
   }
 }
 /*# sourceMappingURL=index.css.map */
