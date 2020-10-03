@@ -342,7 +342,6 @@ main {
 }
 
 .projects .card .project-details .project-text {
-  text-indent: 1rem;
   font-size: 0.9rem;
   word-wrap: break-word;
   padding: 0rem 1rem;
@@ -350,9 +349,8 @@ main {
 
 .projects .card .project-details .more {
   font-size: 0.8rem;
+  vertical-align: bottom;
   color: var(--primaryColor);
-  display: inline;
-  padding-left: 0.7rem;
 }
 
 .projects .tags {

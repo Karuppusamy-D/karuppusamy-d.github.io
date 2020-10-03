@@ -66,6 +66,7 @@ header {
         }
     }
 }
+
 main {
     background: var(--bgPrimary);
 }
@@ -236,16 +237,14 @@ main {
         margin: 1rem 0rem;
         margin-bottom: auto;
         .project-text {
-            text-indent: 1rem;
             font-size: 0.9rem;
             word-wrap: break-word;
             padding: 0rem 1rem;
         }
         .more {
             font-size: 0.8rem;
+            vertical-align: bottom;
             color: var(--primaryColor);
-            display: inline;
-            padding-left: 0.7rem;
         }
     }
 
