@@ -1,9 +1,8 @@
 :root {
-    --primaryColor: #1d0fff;
+    --primaryColor: #1100ff;
     --secondaryColor: #fff;
 
-    --mainText: #222;
-    --secondaryText: #2b06fc;
+    --primaryText: #2b06fc;
 
     --bgPrimary: #fff;
     // --bgSecondary: #edf7fa;
@@ -13,3 +12,12 @@
 
     --borderColor: #1d0fff;
 }
+
+$card-background-color: #d4edf7;
+// $card-background-color: #17141d;
+
+$card-text: var(--primaryText);
+$card-date-text: #584dff;
+
+$card-shadow: -5px 0px 30px -5px #006eff47;
+$card-tags-border: 3px solid #584dff;

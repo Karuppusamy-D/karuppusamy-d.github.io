@@ -1,8 +1,7 @@
 :root {
-  --primaryColor: #1d0fff;
+  --primaryColor: #1100ff;
   --secondaryColor: #fff;
-  --mainText: #222;
-  --secondaryText: #2b06fc;
+  --primaryText: #2b06fc;
   --bgPrimary: #fff;
   --bgSecondary: #d4edf7;
   --hoverColor: #edf7fa;
@@ -25,10 +24,6 @@ ul {
   list-style: none;
 }
 
-hr {
-  border: 1px solid var(--primaryColor);
-}
-
 body {
   background: var(--bgPrimary);
   font-family: "Roboto", sans-serif;
@@ -39,7 +34,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #fff;
+  background-color: var(--bgPrimary);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -92,7 +87,7 @@ header .nav-wrapper .nav-item {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: var(--secondaryColor);
+  background-color: var(--bgPrimary);
   min-width: 6rem;
   height: 3.5rem;
 }
@@ -100,7 +95,7 @@ header .nav-wrapper .nav-item {
 header .nav-wrapper .nav-item a {
   font-size: 0.8rem;
   font-weight: 500;
-  color: var(--mainText);
+  color: var(--primaryColor);
 }
 
 header .nav-wrapper .nav-item.active {
@@ -114,10 +109,6 @@ header .nav-wrapper .nav-item.active a {
 
 header .nav-wrapper .nav-item:hover {
   background-color: var(--hoverColor);
-}
-
-header .nav-wrapper .nav-item:hover a {
-  color: var(--primaryColor);
 }
 
 main {
@@ -173,7 +164,7 @@ main {
 }
 
 .intro-wrapper .proverb .quotes {
-  color: var(--primaryColor);
+  color: var(--primaryText);
   text-align: center;
   font-size: 1em;
 }
@@ -184,7 +175,7 @@ main {
 }
 
 .intro-wrapper .proverb .author {
-  color: var(--primaryColor);
+  color: var(--primaryText);
   font-size: 0.66em;
   margin-left: 50%;
 }
@@ -231,7 +222,7 @@ main {
 
 .about-wrapper .profile .profile-name {
   padding: 1rem 0rem;
-  color: var(--primaryColor);
+  color: var(--borderColor);
   font-size: 2rem;
   font-family: "EB Garamond", serif;
 }
@@ -239,14 +230,14 @@ main {
 .about-wrapper .intro-text {
   justify-self: flex-start;
   text-align: center;
-  color: var(--secondaryText);
+  color: var(--primaryText);
   font-size: 1.4rem;
   padding: 2rem 0rem;
 }
 
 .skills-wrapper h2 {
   text-align: center;
-  color: var(--primaryColor);
+  color: var(--primaryText);
   font-family: "Times New Roman", Times, serif;
   padding-top: 4rem;
 }
@@ -273,28 +264,31 @@ main {
   width: 100%;
 }
 
-.projects {
-  background-color: #100e17;
-  color: #fff;
+.projects-wrapper {
+  overflow-x: scroll;
 }
 
-.projects .card-container {
-  width: 100%;
-  overflow-x: scroll;
+.projects-container {
+  color: var(--primaryText);
+  float: left;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 3rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
-.projects .card {
+.projects-container .card {
   min-width: 300px;
   max-width: 350px;
   height: 350px;
   border-radius: 16px;
-  background-color: #17141d;
-  -webkit-box-shadow: -1rem 0 3rem #000;
-          box-shadow: -1rem 0 3rem #000;
+  background-color: #d4edf7;
+  -webkit-box-shadow: -5px 0px 30px -5px #006eff47;
+          box-shadow: -5px 0px 30px -5px #006eff47;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -307,53 +301,52 @@ main {
   transition: 0.2s;
 }
 
-.projects .card:hover {
+.projects-container .card:hover {
   -webkit-transform: translateY(-1rem);
           transform: translateY(-1rem);
 }
 
-.projects .card:hover ~ .card {
+.projects-container .card:hover ~ .card {
   -webkit-transform: translateX(130px);
           transform: translateX(130px);
 }
 
-.projects .card:not(:first-child) {
+.projects-container .card:not(:first-child) {
   margin-left: -130px;
 }
 
-.projects .card .project-header {
-  margin-bottom: auto;
+.projects-container .card .project-header {
+  margin-bottom: 2rem;
 }
 
-.projects .card .date {
-  font-size: 14px;
+.projects-container .card .date {
+  font-size: 0.875rem;
   margin-bottom: 1rem;
-  color: #8a8a8a;
+  color: #584dff;
 }
 
-.projects .card .project-title {
-  font-size: 20px;
+.projects-container .card .project-title {
+  font-size: 1.25rem;
   font-weight: 700;
 }
 
-.projects .card .project-details {
-  margin: 1rem 0rem;
+.projects-container .card .project-details {
   margin-bottom: auto;
 }
 
-.projects .card .project-details .project-text {
+.projects-container .card .project-details .project-text {
   font-size: 0.9rem;
   word-wrap: break-word;
   padding: 0rem 1rem;
 }
 
-.projects .card .project-details .more {
+.projects-container .card .project-details .more {
   font-size: 0.8rem;
   vertical-align: bottom;
   color: var(--primaryColor);
 }
 
-.projects .tags {
+.projects-container .tags {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -362,12 +355,13 @@ main {
   margin: 1rem 0 1rem;
 }
 
-.projects .tags div {
-  font-size: 9px;
+.projects-container .tags div {
+  font-size: 0.56rem;
   font-weight: 700;
   padding: 4px 10px;
-  border: 3px solid #28242f;
+  border: 3px solid #584dff;
   border-radius: 2rem;
+  margin: 0.06rem;
 }
 
 footer {

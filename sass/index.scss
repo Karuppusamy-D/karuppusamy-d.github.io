@@ -12,7 +12,7 @@ body {
 
 header {
     display: flex;
-    background-color: #fff;
+    background-color: var(--bgPrimary);
     align-items: center;
     justify-content: space-between;
     padding: 0rem $padding-lr;
@@ -41,13 +41,13 @@ header {
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: var(--secondaryColor);
+            background-color: var(--bgPrimary);
             min-width: 6rem;
             height: $navbar-height;
             a {
                 font-size: 0.8rem;
                 font-weight: 500;
-                color: var(--mainText);
+                color: var(--primaryColor);
             }
 
             &.active {
@@ -59,9 +59,6 @@ header {
             }
             &:hover {
                 background-color: var(--hoverColor);
-                a {
-                    color: var(--primaryColor);
-                }
             }
         }
     }
@@ -102,7 +99,7 @@ main {
         font-size: 2rem;
         flex-flow: column;
         .quotes {
-            color: var(--primaryColor);
+            color: var(--primaryText);
             text-align: center;
             font-size: 1em;
             &::before,
@@ -112,7 +109,7 @@ main {
             }
         }
         .author {
-            color: var(--primaryColor);
+            color: var(--primaryText);
             font-size: 0.66em;
             margin-left: 50%;
             &::before {
@@ -145,7 +142,7 @@ main {
         }
         .profile-name {
             padding: 1rem 0rem;
-            color: var(--primaryColor);
+            color: var(--borderColor);
             font-size: 2rem;
             font-family: "EB Garamond", serif;
         }
@@ -153,7 +150,7 @@ main {
     .intro-text {
         justify-self: flex-start;
         text-align: center;
-        color: var(--secondaryText);
+        color: var(--primaryText);
         font-size: 1.4rem;
         padding: 2rem 0rem;
     }
@@ -162,7 +159,7 @@ main {
 .skills-wrapper {
     h2 {
         text-align: center;
-        color: var(--primaryColor);
+        color: var(--primaryText);
         font-family: "Times New Roman", Times, serif;
         padding-top: 4rem;
     }
@@ -182,24 +179,24 @@ main {
     }
 }
 
-.projects {
+.projects-wrapper {
+    overflow-x: scroll;
+}
+.projects-container {
     // Reference: https://codepen.io/carbonrider/pen/zYGNqZE
-    background-color: #100e17;
-    color: #fff;
-    .card-container {
-        width: 100%;
-        overflow-x: scroll;
-        display: flex;
-        padding: 3rem;
-    }
+    color: $card-text;
+    float: left;
+    display: flex;
+    padding: 3rem;
+    user-select: none; // Disable Text Selection
 
     .card {
         min-width: 300px;
         max-width: 350px;
         height: 350px;
         border-radius: 16px;
-        background-color: #17141d;
-        box-shadow: -1rem 0 3rem #000;
+        background-color: $card-background-color;
+        box-shadow: $card-shadow;
         display: flex;
         flex-direction: column;
         padding: 1.5rem;
@@ -219,22 +216,21 @@ main {
     }
 
     .card .project-header {
-        margin-bottom: auto;
+        margin-bottom: 2rem;
     }
 
     .card .date {
-        font-size: 14px;
+        font-size: 0.875rem;
         margin-bottom: 1rem;
-        color: #8a8a8a;
+        color: $card-date-text;
     }
 
     .card .project-title {
-        font-size: 20px;
+        font-size: 1.25rem;
         font-weight: 700;
     }
 
     .card .project-details {
-        margin: 1rem 0rem;
         margin-bottom: auto;
         .project-text {
             font-size: 0.9rem;
@@ -255,11 +251,12 @@ main {
     }
 
     .tags div {
-        font-size: 9px;
+        font-size: 0.56rem;
         font-weight: 700;
         padding: 4px 10px;
-        border: 3px solid #28242f;
+        border: $card-tags-border;
         border-radius: 2rem;
+        margin: 0.06rem;
     }
 }
 
