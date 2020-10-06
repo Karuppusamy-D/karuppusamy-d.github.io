@@ -129,11 +129,10 @@ main {
 }
 
 .about-wrapper {
-    padding: 3rem 0rem;
+    grid-template-rows: 400px;
     .profile {
         flex-flow: column;
         align-items: center;
-        align-self: flex-start;
         .profile-pic {
             width: 10rem;
             border-radius: 50%;
@@ -141,18 +140,18 @@ main {
             border: 2px solid var(--borderColor);
         }
         .profile-name {
-            padding: 1rem 0rem;
+            padding-top: 1rem;
             color: var(--borderColor);
             font-size: 2rem;
             font-family: "EB Garamond", serif;
         }
     }
     .intro-text {
+        font-family: cursive, serif;
         justify-self: flex-start;
         text-align: center;
         color: var(--primaryText);
-        font-size: 1.4rem;
-        padding: 2rem 0rem;
+        font-size: 1.3rem;
     }
 }
 
@@ -181,82 +180,82 @@ main {
 
 .projects-wrapper {
     overflow-x: scroll;
-}
-.projects-container {
-    // Reference: https://codepen.io/carbonrider/pen/zYGNqZE
-    color: $card-text;
-    float: left;
-    display: flex;
-    padding: 3rem;
-    user-select: none; // Disable Text Selection
 
-    .card {
-        min-width: 300px;
-        max-width: 350px;
-        height: 350px;
-        border-radius: 16px;
-        background-color: $card-background-color;
-        box-shadow: $card-shadow;
+    .projects-container {
+        // Reference: https://codepen.io/carbonrider/pen/zYGNqZE
+        color: $card-text;
+        float: left;
         display: flex;
-        flex-direction: column;
-        padding: 1.5rem;
-        transition: 0.2s;
-    }
-
-    .card:hover {
-        transform: translateY(-1rem);
-    }
-
-    .card:hover ~ .card {
-        transform: translateX(130px);
-    }
-
-    .card:not(:first-child) {
-        margin-left: -130px;
-    }
-
-    .card .project-header {
-        margin-bottom: 2rem;
-    }
-
-    .card .date {
-        font-size: 0.875rem;
-        margin-bottom: 1rem;
-        color: $card-date-text;
-    }
-
-    .card .project-title {
-        font-size: 1.25rem;
-        font-weight: 700;
-    }
-
-    .card .project-details {
-        margin-bottom: auto;
-        .project-text {
-            font-size: 0.9rem;
-            word-wrap: break-word;
-            padding: 0rem 1rem;
+        padding: 3rem;
+        .card {
+            width: 300px;
+            height: 350px;
+            border-radius: 16px;
+            background-color: $card-background-color;
+            box-shadow: $card-shadow;
+            display: flex;
+            flex-direction: column;
+            padding: 1.5rem;
+            transition: 0.2s;
+            user-select: none; // Disable Text Selection
         }
-        .more {
-            font-size: 0.8rem;
-            vertical-align: bottom;
-            color: var(--primaryColor);
+
+        .card:hover {
+            transform: translateY(-1rem);
         }
-    }
 
-    .tags {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 1rem 0 1rem;
-    }
+        .card:hover ~ .card {
+            transform: translateX(130px);
+        }
 
-    .tags div {
-        font-size: 0.56rem;
-        font-weight: 700;
-        padding: 4px 10px;
-        border: $card-tags-border;
-        border-radius: 2rem;
-        margin: 0.06rem;
+        .card:not(:first-child) {
+            margin-left: -130px;
+        }
+
+        .card .project-header {
+            height: 5.8rem;
+        }
+
+        .card .date {
+            font-size: 0.875rem;
+            margin-bottom: 1rem;
+            color: $card-date-text;
+        }
+
+        .card .project-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        .card .project-details {
+            // text-indent: 1rem;
+            margin-bottom: auto;
+            .project-text {
+                font-size: 0.9rem;
+                word-wrap: break-word;
+                padding: 0rem 1rem;
+            }
+            .more {
+                font-size: 0.8rem;
+                vertical-align: bottom;
+                color: var(--primaryColor);
+            }
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 1rem 0 1rem;
+        }
+
+        .tags div {
+            font-size: 0.56rem;
+            font-weight: 700;
+            padding: 4px 10px;
+            border: $card-tags-border;
+            border-radius: 2rem;
+            margin: 0.06rem;
+        }
     }
 }
 
@@ -309,9 +308,14 @@ footer {
         }
     }
     .about-wrapper {
+        grid-template-rows: 300px 150px;
+        .profile .profile-name {
+            font-size: 1.8rem;
+        }
         .intro-text {
             justify-self: center;
-            font-size: 1.25rem;
+            align-self: flex-start;
+            font-size: 1.2rem;
         }
     }
 }
@@ -319,8 +323,7 @@ footer {
 @media (max-width: 650px) {
     .skills-wrapper .skills-list {
         justify-content: space-evenly;
-        padding: 5rem 2rem;
-        padding-top: 4rem;
+        padding: 4rem 2rem 5rem 2rem;
         grid-template-columns: repeat(3, 75px);
         grid-gap: 1rem;
         .skill img {
@@ -331,11 +334,21 @@ footer {
 
 @media (max-width: 400px) {
     .intro-wrapper {
+        grid-template-columns: 1fr;
         .devices {
             width: 80vw;
             img {
                 width: 90%;
             }
         }
+    }
+    .about-wrapper {
+        grid-template-columns: 1fr;
+        .intro-text {
+            font-size: 1rem;
+        }
+    }
+    .skills-wrapper .skills-list {
+        grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
     }
 }
