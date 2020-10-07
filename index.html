@@ -10,7 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,500&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/index.min.css" />
 
 </head>
 
@@ -125,9 +126,9 @@
             </div>
         </section>
 
-        <section class="s2 projects-wrapper">
-            <div class="projects-container">
-                <div class="card">
+        <section class="s2 swiper-container">
+            <div class="swiper-wrapper">
+                <div class="card swiper-slide">
                     <div class="project-header">
                         <div class="date">Jan 20 - Present</div>
                         <h2 class="project-title">
@@ -153,7 +154,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card swiper-slide">
                     <div class="project-header">
                         <div class="date">Apr 2020</div>
                         <h2 class="project-title">
@@ -178,7 +179,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card swiper-slide">
                     <div class="project-header">
                         <div class="date">Mar 2020</div>
                         <h2 class="project-title">
@@ -201,7 +202,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card swiper-slide">
                     <div class="project-header">
                         <div class="date">Sep 2020</div>
                         <h2 class="project-title">
@@ -224,7 +225,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card swiper-slide">
                     <div class="project-header">
                         <div class="date">Sep 2020</div>
                         <h2 class="project-title">
@@ -251,6 +252,7 @@
                     </div>
                 </div>
             </div>
+            <div class="swiper-pagination"></div>
         </section>
 
     </main>
@@ -258,6 +260,10 @@
     <footer>
         <div>Made with ❤️ by Karuppusamy</div>
     </footer>
+
+    <!-- Scripts -->
+    <script src="./scripts/swiper-bundle.min.js"></script>
+    <script src="./scripts/index.js"></script>
 </body>
 
 </html>
