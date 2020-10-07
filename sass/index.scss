@@ -178,54 +178,65 @@ main {
     }
 }
 
-.swiper-container {
-    width: 100%;
-    overflow: hidden;
-    padding: 4rem;
-    .swiper-slide {
-        opacity: 0;
-        &-next,
-        &-prev {
-            opacity: 0.3;
-        }
-        &-active {
-            opacity: 1;
-        }
-    }
+.projects-wrapper {
+    overflow-x: scroll;
 
-    .card {
-        width: 320px;
-        height: 370px;
-        border-radius: 16px;
-
+    .projects-container {
+        // Reference: https://codepen.io/carbonrider/pen/zYGNqZE
         color: $card-text;
-        background-color: $card-background-color;
-        box-shadow: $card-shadow;
+        float: left;
         display: flex;
-        flex-direction: column;
-        padding: 2.5rem;
-        user-select: none; // Disable Text Selection
-        .project-header {
-            margin-bottom: 1rem;
-            .date {
-                font-size: 0.875rem;
-                margin-bottom: 0.7rem;
-                color: $card-date-text;
-            }
-            .project-title {
-                font-size: 1.25rem;
-                font-weight: 700;
-            }
+        padding: 3rem;
+        .card {
+            width: 300px;
+            height: 350px;
+            border-radius: 16px;
+            background-color: $card-background-color;
+            box-shadow: $card-shadow;
+            display: flex;
+            flex-direction: column;
+            padding: 1.5rem;
+            transition: 0.2s;
+            user-select: none; // Disable Text Selection
         }
 
-        .project-details {
+        .card:hover {
+            transform: translateY(-1rem);
+        }
+
+        .card:hover ~ .card {
+            transform: translateX(130px);
+        }
+
+        .card:not(:first-child) {
+            margin-left: -130px;
+        }
+
+        .card .project-header {
+            height: 5.8rem;
+        }
+
+        .card .date {
+            font-size: 0.875rem;
+            margin-bottom: 1rem;
+            color: $card-date-text;
+        }
+
+        .card .project-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        .card .project-details {
+            // text-indent: 1rem;
             margin-bottom: auto;
             .project-text {
+                font-size: 0.9rem;
                 word-wrap: break-word;
+                padding: 0rem 1rem;
             }
             .more {
-                font-size: 0.9rem;
-                font-weight: bold;
+                font-size: 0.8rem;
                 vertical-align: bottom;
                 color: var(--primaryColor);
             }
@@ -235,14 +246,15 @@ main {
             display: flex;
             flex-wrap: wrap;
             margin: 1rem 0 1rem;
-            div {
-                font-size: 0.56rem;
-                font-weight: 700;
-                padding: 4px 10px;
-                border: $card-tags-border;
-                border-radius: 2rem;
-                margin: 0.06rem;
-            }
+        }
+
+        .tags div {
+            font-size: 0.56rem;
+            font-weight: 700;
+            padding: 4px 10px;
+            border: $card-tags-border;
+            border-radius: 2rem;
+            margin: 0.06rem;
         }
     }
 }
@@ -338,8 +350,5 @@ footer {
     }
     .skills-wrapper .skills-list {
         grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
-    }
-    .swiper-container .card {
-        width: 290px;
     }
 }
