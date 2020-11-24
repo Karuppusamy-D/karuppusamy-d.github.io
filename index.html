@@ -2,268 +2,214 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolo | Karuppusamy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./css/index.min.css" />
-
+    <!-- =====BOX ICONS===== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2/css/boxicons.min.css">
+    <title>Karuppusamy | Portfolio</title>
 </head>
 
 <body>
-
-    <header>
-        <div class="logo-wrapper">
-            <div class="logo">
-                <p>Karuppusamy</p>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Karuppusamy</a>
             </div>
 
-            <img class="humburger-icon" src="images/menu.svg" alt="Menu"
-                onclick="document.getElementsByClassName('nav-wrapper')[0].classList.toggle('show')" />
-        </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
 
-        <div class="nav-wrapper">
-            <li class="nav-item home active"><a href="#">Home</a></li>
-            <li class="nav-item expertise"><a href="#">Expertise</a></li>
-            <li class="nav-item education"><a href="#">Education</a></li>
-            <li class="nav-item creations"><a href="#">Creations</a></li>
-            <li class="nav-item contact"><a href="#">Contact</a></li>
-        </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
     </header>
 
-    <main>
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Karuppusamy</span><br> Web Developer
+                </h1>
 
-        <section class="s1">
-            <div class="grid-container intro-wrapper">
-                <div class="grid-column proverb">
-                    <p class="quotes">If you can Dream it,<br />You can do it</p>
-                    <span class="author">Walt Disney</span>
+                <a href="#" class="button">Contact</a>
+            </div>
+
+            <div class="home__social">
+                <a href="https://linkedin.com/in/karuppusamyd" target="_blank" class="home__social-icon"><i
+                        class='bx bxl-linkedin'></i></a>
+                <a href="https://instagram.com/karuppusamy.d" target="_blank" class="home__social-icon"><i
+                        class='bx bxl-instagram'></i></a>
+                <a href="https://github.com/Karuppusamy-D" target="_blank" class="home__social-icon"><i
+                        class='bx bxl-github'></i></a>
+            </div>
+
+            <div class="home__img">
+                <img src="assets/img/profile.png" alt="">
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section " id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/about.jpg" alt="">
                 </div>
-                <div class="grid-column devices">
-                    <img src="images/devices.svg" alt="Devices">
+
+                <div>
+                    <h2 class="about__subtitle">I'm Karuppusamy</h2>
+                    <p class="about__text">A 19-year-old Student form India,
+                        Who has Enormous Amount of Interest
+                        in Learning new things.</p>
                 </div>
             </div>
         </section>
 
-        <section class="s2">
-            <div class="grid-container about-wrapper">
-                <div class="grid-column profile">
-                    <img class="profile-pic" src="images/profile.jpg"></img>
-                    <div class="profile-name">Karuppusamy</div>
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills__container bd-grid">
+                <div>
+                    <h2 class="skills__subtitle">Profesional Skills</h2>
+                    <p class="skills__text">I am Experienced in Frontend, Android and Arduino Development.</p>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-html5 skills__icon'></i>
+                            <span class="skills__name">Frontend</span>
+                        </div>
+                        <div class="skills__bar skills__html">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">90%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-c-plus-plus skills__icon'></i>
+                            <span class="skills__name">Arduino</span>
+                        </div>
+                        <div class="skills__bar skills__js">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">85%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-android skills__icon'></i>
+                            <span class="skills__name">Android</span>
+                        </div>
+                        <div class="skills__bar skills__css">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">70%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxs-dashboard skills__icon'></i>
+                            <span class="skills__name">PCB</span>
+                        </div>
+                        <div class="skills__bar skills__ux">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">80%</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="grid-column intro-text">
-                    <p>I’m a 19-year-old Student form India,<br />Who has Enormous Amount of Interest<br />in Learning
-                        new things.
-                    </p>
+
+                <div>
+                    <img src="assets/img/work3.jpg" alt="" class="skills__img">
                 </div>
             </div>
         </section>
 
-        <section class="s1 skills-wrapper">
-            <h2>My Skills</h2>
-            <div class="skills-list">
+        <!--===== WORK =====-->
+        <section class="work section" id="work">
+            <h2 class="section-title">Work</h2>
 
-                <div class="skill">
-                    <img src="./images/skills/Android.svg" alt="Android">
+            <div class="work__container bd-grid">
+                <div class="work__img">
+                    <img src="assets/img/work1.jpg" alt="">
                 </div>
-
-                <div class="skill">
-                    <img src="./images/skills/Kotlin.svg" alt="Kotlin">
+                <div class="work__img">
+                    <img src="assets/img/work2.jpg" alt="">
                 </div>
-
-                <div class="skill">
-                    <img src="./images/skills/C++.svg" alt="C++">
+                <div class="work__img">
+                    <img src="assets/img/work3.jpg" alt="">
                 </div>
-
-                <div class="skill">
-                    <img src="./images/skills/CSh.svg" alt="C#">
+                <div class="work__img">
+                    <img src="assets/img/work4.jpg" alt="">
                 </div>
-
-                <div class="skill">
-                    <img src="./images/skills/Python.svg" alt="Python">
+                <div class="work__img">
+                    <img src="assets/img/work5.jpg" alt="">
                 </div>
-
-                <div class="skill">
-                    <img src="./images/skills/Java.svg" alt="Java">
-                </div>
-
-                <div class="skill">
-                    <img src="./images/skills/HTML.svg" alt="HTML">
-                </div>
-
-                <div class="skill">
-                    <img src="./images/skills/CSS.svg" alt="CSS">
-                </div>
-
-                <div class="skill">
-                    <img src="./images/skills/JavaScript.svg" alt="JavaScript">
-                </div>
-
-                <div class="skill">
-                    <img src="./images/skills/Bootstrap.svg" alt="Bootstrap">
-                </div>
-
-                <div class="skill">
-                    <img src="./images/skills/jQuery.svg" alt="jQuery">
-                </div>
-
-                <!-- <div class="skill">
-                    <img src="./images/skills/FrontEnd.svg" alt="FrontEnd">
-                    </div> -->
-
-                <div class="skill">
-                    <img src="./images/skills/Arduino.svg" alt="Arduino">
-                </div>
-
-                <div class="skill">
-                    <img src="./images/skills/Altium.svg" alt="Altium">
+                <div class="work__img">
+                    <img src="assets/img/work6.jpg" alt="">
                 </div>
             </div>
         </section>
 
-        <section class="s2 swiper-container">
-            <div class="swiper-wrapper">
-                <div class="card swiper-slide">
-                    <div class="project-header">
-                        <div class="date">Jan 20 - Present</div>
-                        <h2 class="project-title">
-                            Water Level Controller
-                        </h2>
-                    </div>
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
 
-                    <div class="project-details">
-                        <p class="project-text">
-                            It is based on ESP32/NodeMCU and contains Ultrasonic Sensor and a Relay. It automatically
-                            controls water pump and
-                            fills the tanks when empty. It integrates with
-                            Google Assistant, Android App and Webpage... <a href="#" class="more">Know More</a></p>
+            <div class="contact__container bd-grid">
+                <form action="https://formsubmit.co/d.karuppusamy@outlook.com" method="POST" class="contact__form">
+                    <input type="text" name="Name" placeholder="Name" class="contact__input">
+                    <input type="mail" name="Email" placeholder="Email" class="contact__input">
+                    <textarea name="Message" cols="0" rows="10" class="contact__input"></textarea>
+                    <input type="button" value="Contact Me" class="contact__button button">
+                    <!-- Hidden -->
+                    <div>
+                        <!-- Subject -->
+                        <input type="hidden" name="_subject" value="New Form submission!">
+                        <!-- Send response to users with a copy of the submission -->
+                        <input type="hidden" name="_autoresponse"
+                            value="Thank you for contacting. I will get in touch with you shortly.">
+                        <!-- Redirect Website -->
+                        <input type="hidden" name="_next" value="https://karuppusamy-d.github.io">
                     </div>
-
-                    <div class="tags">
-                        <div>Arduino</div>
-                        <div>C++</div>
-                        <div>ESP32</div>
-                        <div>HTML</div>
-                        <div>CSS</div>
-                        <div>JavaScript</div>
-                    </div>
-                </div>
-
-                <div class="card swiper-slide">
-                    <div class="project-header">
-                        <div class="date">Apr 2020</div>
-                        <h2 class="project-title">
-                            HiFi Stereo Amplifier
-                        </h2>
-                    </div>
-
-                    <div class="project-details">
-                        <p class="project-text">
-                            It is an HiFi stereo amplifier board based on TDA7292 IC. It will give top quality audio
-                            without any compromises. It can
-                            provide up-to 40W+40W power output. <a
-                                href="https://github.com/Karuppusamy-D/TDA7292-Amplifier" target="_blank"
-                                class="more">Know
-                                More</a></p>
-                    </div>
-
-                    <div class="tags">
-                        <div>Altium</div>
-                        <div>PCB Design</div>
-                        <div>TDA7292</div>
-                    </div>
-                </div>
-
-                <div class="card swiper-slide">
-                    <div class="project-header">
-                        <div class="date">Mar 2020</div>
-                        <h2 class="project-title">
-                            Multimeter Based on Arduino
-                        </h2>
-                    </div>
-
-                    <div class="project-details">
-                        <p class="project-text">
-                            It is based on Arduino Nano and it can measure Voltage, Current, Resistance, Continuity,
-                            Capacitance and Inductance with
-                            petty good accuracy and speed. <a href="#" class="more">Know
-                                More</a></p>
-                    </div>
-
-                    <div class="tags">
-                        <div>Arduino</div>
-                        <div>Proteus</div>
-                        <div>EasyEDA</div>
-                    </div>
-                </div>
-
-                <div class="card swiper-slide">
-                    <div class="project-header">
-                        <div class="date">Sep 2020</div>
-                        <h2 class="project-title">
-                            Meet Attendance
-                        </h2>
-                    </div>
-
-                    <div class="project-details">
-                        <p class="project-text">
-                            This is a Chrome Extension which is used to take attendance during online classes/Meetings
-                            in Google Meet. <a href="https://github.com/Karuppusamy-D/meet-attendance" class="more">Know
-                                More</a></p>
-                    </div>
-
-                    <div class="tags">
-                        <div>Chrome</div>
-                        <div>JavaScript</div>
-                        <div>HTML</div>
-                        <div>CSS</div>
-                    </div>
-                </div>
-
-                <div class="card swiper-slide">
-                    <div class="project-header">
-                        <div class="date">Sep 2020</div>
-                        <h2 class="project-title">
-                            Khaana Depository
-                        </h2>
-                    </div>
-
-                    <div class="project-details">
-                        <p class="project-text">
-                            A Website to Stop Hunger which collects extra food from nearby functions and provide it to
-                            the
-                            people
-                            who are below the poverty line.
-                            <a href="https://github.com/Karuppusamy-D/khaana-depository" class="more">Know More</a></p>
-                    </div>
-
-                    <div class="tags">
-                        <div>Node.js</div>
-                        <div>Express.js</div>
-                        <div>JavaScript</div>
-                        <div>MongoDB</div>
-                        <div>Bootstrap</div>
-                        <div>HTML5</div>
-                    </div>
-                </div>
+                </form>
             </div>
-            <div class="swiper-pagination"></div>
         </section>
-
     </main>
 
-    <footer>
-        <div>Made with ❤️ by Karuppusamy</div>
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">Karuppusamy</p>
+        <div class="footer__social">
+            <a href="#" class="footer__icon"><i class='bx bxl-facebook'></i></a>
+            <a href="#" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+            <a href="#" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+        </div>
+        <p>&#169; 2020 copyright all right reserved</p>
     </footer>
 
-    <!-- Scripts -->
-    <script src="./scripts/swiper-bundle.min.js"></script>
-    <script src="./scripts/index.js"></script>
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/script/index.js"></script>
 </body>
 
 </html>
