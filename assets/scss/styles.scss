@@ -160,15 +160,17 @@ img {
                 position: absolute;
                 content: "";
                 width: 100%;
-                height: 0.18rem;
+                height: 0.15rem;
                 left: 0;
-                top: 2rem;
+                top: 1.6rem;
                 background-color: var(--first-color);
             }
         }
     }
     &__logo {
         color: var(--second-color);
+        font-family: cursive;
+        font-size: 1rem;
     }
     &__toggle {
         color: var(--second-color);
@@ -181,9 +183,9 @@ img {
     position: absolute;
     content: "";
     width: 100%;
-    height: 0.18rem;
+    height: 0.15rem;
     left: 0;
-    top: 2rem;
+    top: 1.6rem;
     background-color: var(--first-color);
 }
 
@@ -221,13 +223,6 @@ img {
                 color: var(--first-color);
             }
         }
-    }
-
-    &__img {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        width: 295px;
     }
 }
 
@@ -378,6 +373,7 @@ img {
 
     &__title {
         font-size: 2rem;
+        font-family: cursive;
         margin-bottom: var(--mb-4);
     }
     &__social {
@@ -414,6 +410,9 @@ img {
         &__list {
             display: flex;
             padding-top: 0;
+        }
+        &__logo {
+            font-size: 1.3rem;
         }
         &__item {
             margin-left: var(--mb-6);
