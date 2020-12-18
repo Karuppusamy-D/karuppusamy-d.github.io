@@ -1,5 +1,3 @@
-/*===== GOOGLE FONTS =====*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3.5rem;
@@ -401,7 +399,6 @@ img {
 /* ===== CONTACT =====*/
 .contact__input {
   width: 100%;
-  font-size: var(--normal-font-size);
   font-weight: var(--font-semi);
   padding: 1rem;
   border-radius: 0.5rem;
@@ -421,6 +418,7 @@ img {
 
 .contact textarea {
   resize: vertical;
+  font-family: var(--body-font);
 }
 
 /* ===== FOOTER =====*/
@@ -433,7 +431,7 @@ img {
 }
 
 .footer__title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: "Comic Sans MS", var(--body-font);
   margin-bottom: var(--mb-4);
 }
