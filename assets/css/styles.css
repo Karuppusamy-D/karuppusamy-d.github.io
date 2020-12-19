@@ -213,6 +213,18 @@ img {
   right: 0;
 }
 
+.nav-overlay {
+  display: none;
+  height: 100vh;
+  width: 100vh;
+  position: fixed;
+  z-index: var(--z-normal);
+}
+
+.nav-overlay.show {
+  display: block;
+}
+
 /*===== HOME =====*/
 .home {
   padding-top: 3rem;

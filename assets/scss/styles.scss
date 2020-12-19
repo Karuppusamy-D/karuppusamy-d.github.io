@@ -153,17 +153,6 @@ img {
         &:hover {
             opacity: 0.75;
             color: var(--first-color);
-            // position: relative;
-            // &::after {
-            //     position: absolute;
-            //     content: "";
-            //     width: 100%;
-            //     height: 0.15rem;
-            //     left: 0;
-            //     top: 1.6rem;
-            //     background-color: var(--first-color);
-            //     pointer-events: none;
-            // }
         }
     }
     &__logo {
@@ -194,7 +183,16 @@ img {
 .show {
     right: 0;
 }
-
+.nav-overlay {
+    display: none;
+    height: 100vh;
+    width: 100vh;
+    position: fixed;
+    z-index: var(--z-normal);
+    &.show {
+        display: block;
+    }
+}
 /*===== HOME =====*/
 .home {
     padding-top: 3rem;
