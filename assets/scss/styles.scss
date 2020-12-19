@@ -189,8 +189,10 @@ img {
     width: 100vh;
     position: fixed;
     z-index: var(--z-normal);
-    &.show {
-        display: block;
+    @media screen and (max-width: 768px) {
+        &.show {
+            display: block;
+        }
     }
 }
 /*===== HOME =====*/
@@ -316,6 +318,7 @@ img {
     }
     &__img {
         border-radius: 0.5rem;
+        margin: auto;
     }
 }
 /* ===== WORK =====*/

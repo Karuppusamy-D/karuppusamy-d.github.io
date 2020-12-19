@@ -221,8 +221,10 @@ img {
   z-index: var(--z-normal);
 }
 
-.nav-overlay.show {
-  display: block;
+@media screen and (max-width: 768px) {
+  .nav-overlay.show {
+    display: block;
+  }
 }
 
 /*===== HOME =====*/
@@ -383,6 +385,7 @@ img {
 
 .skills__img {
   border-radius: 0.5rem;
+  margin: auto;
 }
 
 /* ===== WORK =====*/
