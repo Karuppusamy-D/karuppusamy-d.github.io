@@ -5,9 +5,9 @@
 
 -   🎓 &nbsp; Studying Engineering at P. A. College of Engineering and Technology.
 
--   🌱 &nbsp; I’m currently learning **Full Stack Web Development**
+-   🌱 &nbsp; I’m currently learning **Web Development**
 
--   👨‍💻 &nbsp; My Portfolio available at [Here](https://karuppusamy-d.github.io/portfolio/)
+-   👨‍💻 &nbsp; My Portfolio available at [Here](https://karuppusamy.me/)
 
 <p align="left">
 <h3 align="left">Connect with me:</h3>
@@ -40,6 +40,8 @@
 <a href="https://www.photoshop.com/en" target="_blank"> <img src="https://devicons.github.io/devicon/devicon.git/icons/photoshop/photoshop-plain.svg" alt="photoshop" width="40" height="40"/> </a>
 <a href="https://www.figma.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a>
 <a href="https://code.visualstudio.com/" target="_blank"> <img src="https://img.icons8.com/fluent/48/000000/visual-studio-code-2019.png" alt="vscode" width="40" height="40"/> </a>
+<a href="https://www.php.net/" target="_blank"> <img src="https://devicons.github.io/devicon/devicon.git/icons/php/php-plain.svg" alt="php" width="40" height="40"/> </a>
+<a href="https://wordpress.org/" target="_blank"> <img src="https://devicons.github.io/devicon/devicon.git/icons/wordpress/wordpress-plain-wordmark.svg" alt="php" width="40" height="40"/> </a>
 
  </p>
 
