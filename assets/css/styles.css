@@ -120,9 +120,9 @@ img {
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
   grid-column-gap: 2rem;
-  width: calc(100% - 2rem);
-  margin-left: var(--mb-2);
-  margin-right: var(--mb-2);
+  width: calc(100% - 4rem);
+  margin-left: var(--mb-4);
+  margin-right: var(--mb-4);
 }
 
 .l-header {
@@ -184,7 +184,7 @@ img {
 .nav__logo {
   color: var(--second-color);
   font-family: "Comic Sans MS", var(--body-font);
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .nav__toggle {
@@ -419,7 +419,7 @@ img {
   font-weight: var(--font-semi);
   padding: 1rem;
   border-radius: 0.5rem;
-  border: 1.5px solid var(--second-color);
+  border: 1.5px solid #acacac;
   outline: none;
   margin-bottom: var(--mb-4);
 }
