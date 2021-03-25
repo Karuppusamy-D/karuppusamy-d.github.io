@@ -3,11 +3,11 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=karuppusamy-d&style=flat-square" /> </p>
 
--   🎓 &nbsp; Studying Engineering at P. A. College of Engineering and Technology.
+- 🎓 &nbsp; Studying Engineering at P. A. College of Engineering and Technology.
 
--   🌱 &nbsp; I’m currently learning **Web Development**
+- 🌱 &nbsp; I’m currently learning **Web Development**
 
--   👨‍💻 &nbsp; My Portfolio available at [Here](https://karuppusamy.me/)
+- 👨‍💻 &nbsp; My Portfolio available at [Here](https://karuppusamy.me/)
 
 <p align="left">
 <h3 align="left">Connect with me:</h3>
