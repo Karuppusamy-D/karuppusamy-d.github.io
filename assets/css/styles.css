@@ -151,7 +151,7 @@ img {
   font-weight: var(--font-semi);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
     top: var(--header-height);
