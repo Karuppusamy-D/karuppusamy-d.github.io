@@ -284,11 +284,15 @@ img {
   padding: 0.75rem 2.5rem;
   font-weight: var(--font-semi);
   border-radius: 0.5rem;
+  -webkit-transition: -webkit-box-shadow 0.5s ease-in-out;
+  transition: -webkit-box-shadow 0.5s ease-in-out;
+  transition: box-shadow 0.5s ease-in-out;
+  transition: box-shadow 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
 }
 
-.button:hover {
-  -webkit-box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
+.button:focus, .button:hover {
+  -webkit-box-shadow: #004dff80 0px 2px 20px;
+          box-shadow: #004dff80 0px 2px 20px;
 }
 
 /* ===== ABOUT =====*/
@@ -419,9 +423,17 @@ img {
   font-weight: var(--font-semi);
   padding: 1rem;
   border-radius: 0.5rem;
-  border: 1.5px solid #acacac;
+  border: 1px solid #ced4da;
   outline: none;
   margin-bottom: var(--mb-4);
+  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.contact__input:focus {
+  border-color: #3872c1;
 }
 
 .contact__button {
