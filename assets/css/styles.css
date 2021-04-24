@@ -373,20 +373,20 @@ img {
   z-index: var(--z-back);
 }
 
-.skills__html {
+.skills__web {
   width: 90%;
 }
 
-.skills__js {
+.skills__arduino {
   width: 85%;
 }
 
-.skills__css {
-  width: 70%;
+.skills__android {
+  width: 75%;
 }
 
-.skills__ux {
-  width: 80%;
+.skills__pcb {
+  width: 78%;
 }
 
 .skills__img {
