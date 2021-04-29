@@ -11,7 +11,7 @@
 
 <p align="left">
 <h3 align="left">Connect with me:</h3>
-<a href="https://linkedin.com/in/karuppusamyd" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="karuppusamyd" height="30" width="40" /></a>
+<a href="https://linkedin.com/in/karuppusamy" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="karuppusamy" height="30" width="40" /></a>
 <a href="https://instagram.com/karuppusamy.d" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" alt="karuppusamy.d" height="30" width="40" /></a>
 <a href="mailto:d.karuppusamy@outlook.com" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.10.0/icons/gmail.svg" alt="d.karuppusamy@outlook.com" height="30" width="40" /></a>
 </p>
