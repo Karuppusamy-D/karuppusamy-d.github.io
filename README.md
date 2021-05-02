@@ -11,7 +11,8 @@ I love learning different skills and creating awesome projects based on my knowl
 
 - 🎓 &nbsp; Studying Engineering at P. A. College of Engineering and Technology.
 
-- 🌱 &nbsp; I’m currently learning **Cloud Computing**
+- 🌱 &nbsp; I’m currently learning **Linux and Cloud
+  Computing.**
 
 - 👨‍💻 &nbsp; My Website available at [Here](https://karuppusamy.me/)
 
