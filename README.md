@@ -17,10 +17,11 @@ I love learning different skills and creating awesome projects based on my knowl
 
 Connect with me:
 
-<p align="left">
-<a href="https://linkedin.com/in/karuppusamy" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="karuppusamy" height="30" width="40" /></a>
-<a href="https://instagram.com/karuppusamy.d" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" alt="karuppusamy.d" height="30" width="40" /></a>
-<a href="mailto:d.karuppusamy@outlook.com" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.10.0/icons/gmail.svg" alt="d.karuppusamy@outlook.com" height="30" width="40" /></a>
+<a href="https://facebook.com/karuppusamy2001/" target="blank"><img align="center" src="assets/img/social/facebook.svg" alt="facebook" height="30" width="40" /></a>
+<a href="https://twitter.com/karuppusamy_" target="blank"><img align="center" src="assets/img/social/twitter.svg" alt="twitter" height="30" width="40" /></a>
+<a href="https://instagram.com/karuppusamy.d" target="blank"><img align="center" src="assets/img/social/instagram.svg" alt="instagram" height="30" width="40" /></a>
+<a href="https://linkedin.com/in/karuppusamy" target="blank"><img align="center" src="assets/img/social/linkedin.svg" alt="linkedin" height="30" width="40" /></a>
+<a href="mailto:d.karuppusamy@outlook.com" target="blank"><img align="center" src="assets/img/social/mail.svg" alt="d.karuppusamy@outlook.com" height="30" width="40" /></a>
 
 &nbsp;
 
